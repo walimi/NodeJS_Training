@@ -13,7 +13,7 @@ var printFileContent = function(directory) {
             var file = path.join(__dirname, "lib", fileName);
             var stats = fs.statSync(file);
             if(stats.isFile()) {
-                fs.readFile(file, function(err, contents){
+                fs.readFile(file, "UTF-8", function(err, contents){
                     if (err) {
                         console.log(err);
                     }
