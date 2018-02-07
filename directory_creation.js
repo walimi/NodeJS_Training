@@ -3,12 +3,17 @@
 var fs = require("fs");
 
 /**
- * Creates a directory
- * @param {string} name Name of the directory 
+ * Creates a directory if it doesn't exist.
+ * 
+ * @param {string} directoryName Name of the directory 
  * @param {function} callback Callback function 
  */
-function createDirectoryAsync(name, callback) {
-    fs.mkdir(name, callback);
+function createDirectoryAsync(directoryName, callback) {
+    if (fs.exists(directoryName)) {
+        console.log("Directory already exists.");
+    } else {
+        fs.mkdir(name, callback);
+    }
 }
 
 // example invocation
