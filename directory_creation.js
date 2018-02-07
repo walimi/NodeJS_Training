@@ -9,7 +9,7 @@ var fs = require("fs");
  * @param {function} callback Callback function 
  */
 function createDirectoryAsync(directoryName, callback) {
-    if (fs.exists(directoryName)) {
+    if (fs.existsSync(directoryName)) {
         console.log("Directory already exists.");
     } else {
         fs.mkdir(name, callback);
