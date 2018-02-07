@@ -6,8 +6,17 @@ var fs = require("fs");
  * @param {string} contents Contents of the file
  * @param {function} callbackFunction Callback function to call when contes are written.
  */
-function writeToFile(fileName, contents, callback) {
+function writeToFileAsync(fileName, contents, callback) {
     fs.writeFile(fileName, contents, callback);
 }
 
 
+/**
+ * 
+ * @param {string} fileName Name of the file 
+ * @param {string} contents Contents to be appended 
+ * @param {function} callback Callback function (optional.) 
+ */
+function appendToFileAsync(fileName, contents, callback) {
+    fs.appendToFileAsync(fileName, contents, callback);
+}
