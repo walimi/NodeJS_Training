@@ -24,3 +24,44 @@ function renameFileAsync(oldFileName, newFileName) {
         }
     });
 }
+
+
+// remove file
+
+
+/**
+ * Removes the file synchronously
+ * 
+ * @param {string} fileName File name (including relative path)
+ */
+function removeFileSync(fileName) {
+    try {
+        fs.unlinkSync(fileName);
+    }
+    catch (err) {
+        console.log(err);
+    }
+    
+}
+
+// sample invocation
+removeFileSync("my_directory/my_file.js");
+
+/**
+ * Removes the file asynchronously
+ * @param {string} fileName File name (including relative path) 
+ * @param {function} callback Callback function  
+ */
+function removeFile(fileName, callback) {
+    fs.unlink(fileName, callback);
+}
+
+// sample invocation
+
+removeFile("my_directory/my_fileName.js", function(err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("File removed successfully.")
+    }
+});
