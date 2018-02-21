@@ -9,3 +9,6 @@ Install express node module
 ### Install following modules (saving them in package.json)
 
 * `npm install express --save`
+* `npm install cors --save`
+* `npm install body-parser --save`
+* `npm install underscore --save`
