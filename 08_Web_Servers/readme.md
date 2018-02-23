@@ -16,3 +16,7 @@ Install express node module
 You can remove a package using the following command which will also remove it from package.json
 
 `npm remove underscore --save`
+
+08_02 - Intro to Express
+-------------------------
+Serving static files using the Express module. 
