@@ -20,3 +20,7 @@ You can remove a package using the following command which will also remove it f
 08_02 - Intro to Express
 -------------------------
 Serving static files using the Express module. 
+
+08_03 - Express Routing and CORS
+--------------------------------
+
