@@ -29,13 +29,4 @@ Serving JSON data.
 ---------------------------------------
 Handling POST and DELETE requests. 
 
-09 - Web Sockets
-=================
-
-09_01 - Creating a WebSocket Server
-------------------------------------
-
-### Installing the WS module using the following command
-
-* `npm install ws --save`
 
