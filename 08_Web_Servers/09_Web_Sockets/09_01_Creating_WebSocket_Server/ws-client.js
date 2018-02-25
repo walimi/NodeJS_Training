@@ -1,3 +1,18 @@
+"use strict";
+
+var ws = new WebSocket("ws://localhost:3000"); // we can use plain JS b/c Chrome supports WebSockets
+
+ws.onopen = function() {
+    setTitle("Connect to Cyberchat");
+};
+
+ws.onclose = function() {
+    setTitle("DISCONNECTED");
+};
+
+ws.onmessage = function(payload) {
+    printMessage(payload.data);
+};
 
 document.forms[0].onsubmit = function () {
     var input = document.getElementById('message');
