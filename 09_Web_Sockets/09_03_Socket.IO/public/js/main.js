@@ -3,7 +3,6 @@
 document.forms[0].onsubmit = function () {
     var input = document.getElementById("message");
     printMessage(input.value);
-    socket.emit("chat", input.value);
     input.value = '';
 };
 
