@@ -19,13 +19,11 @@ app.use(express.static("./public"));
 // for every socket connection
 io.on("connection", function(socket) {
 
-    // for every chat event, broadcast the message to all
-    // connected sockets. 
+    // for every chat event, broadcast the message to all connected sockets. 
     socket.on("chat", function(message) {
         socket.broadcast.emit("message", message);
     });
-
-    socket.emit("message", "Welcome to Cyber chat");
+    socket.emit("message", "Welcome to Cyber Chat");
 });
 
 console.log("Starting socket app using http://localhost:3000");

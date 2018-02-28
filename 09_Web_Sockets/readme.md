@@ -36,3 +36,7 @@ In order to use the socket.io we need the socket.io-client.js file. The minified
 You can install the socket.io client by running the following command
 
 * `npm install socket.io-client`
+
+Run the following command in the terminal to start the socket server
+
+* `node sio-server`
