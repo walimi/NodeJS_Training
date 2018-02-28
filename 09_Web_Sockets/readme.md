@@ -29,3 +29,10 @@ Socket.IO will fall back on using long polling if the browser does not support w
 
 * `npm install socket.io --save`
 * `npm install express --save`
+
+
+In order to use the socket.io we need the socket.io-client.js file. The minified version of this file is located under public folder in the js folder. 
+
+You can install the socket.io client by running the following command
+
+* `npm install socket.io-client`
