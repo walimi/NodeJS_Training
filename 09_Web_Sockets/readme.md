@@ -25,7 +25,7 @@ https://caniuse.com/#search=websockets
 
 Socket.IO will fall back on using long polling if the browser does not support websockets natively. 
 
-### Install the socket.io module using the following command
+### Install the socket.io and express modules using the following commands
 
 * `npm install socket.io --save`
 * `npm install express --save`
