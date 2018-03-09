@@ -9,7 +9,12 @@ describe("Tools", function() { // you can nest describe calls
         });
     });
 
+
     describe("loadWikis()", function() {
+    
+        // make Mocha wait 5s for the asyn request to complete
+        this.timeout(5000);
+    
         it("should load Abraham Lincoln's wikipedia page", function(done) {
             tools.loadWiki({first: "Abraham", last: "Lincoln"}, function(html){
                 expect(html).to.be.ok; 
