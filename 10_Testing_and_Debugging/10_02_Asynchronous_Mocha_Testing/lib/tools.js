@@ -10,6 +10,8 @@ module.exports = {
         https.get(url, function(res) {
             var body = "";
 
+            res.setEncoding("UTF-8");
+
             res.on("data", function(chunk) {
                 body += chunk;
             });
