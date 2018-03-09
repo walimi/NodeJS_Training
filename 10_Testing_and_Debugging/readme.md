@@ -20,4 +20,11 @@ With Mocha you place the test files under the test folder.
 
 Chai is the assertion engine. 
 
+10_02 - Asynchronous Mocha Testing
+------------------------------------
 
+Loading a website is an asyn process. 
+
+If we don't pass a variable such as "done" to the it functions callback, the mocha
+test will run. If you do add a variable, Mocha will wait until the callback in the 
+function we're testing is actually completed. 
