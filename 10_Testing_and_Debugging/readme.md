@@ -38,3 +38,13 @@ function we're testing is actually completed.
 
 Nock helps mock web-servers so you don't have to go to the actual web-server when testing
 with Mocha.
+
+
+10_04 - Injecting Dependencies with Rewire
+-------------------------------------------
+
+### Install Rewire module using the following command
+
+* `npm install rewire --save-dev`
+
+
