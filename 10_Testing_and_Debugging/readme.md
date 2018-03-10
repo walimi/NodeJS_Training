@@ -28,3 +28,13 @@ Loading a website is an asyn process.
 If we don't pass a variable such as "done" to the it functions callback, the mocha
 test will run. If you do add a variable, Mocha will wait until the callback in the 
 function we're testing is actually completed. 
+
+10_03 - Mocking a Server with Nock
+------------------------------------
+
+## Install Nock using the following npm command
+
+* `npm install nock --save-dev`
+
+Nock helps mock web-servers so you don't have to go to the actual web-server when testing
+with Mocha.
