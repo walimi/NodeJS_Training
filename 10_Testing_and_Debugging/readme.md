@@ -47,4 +47,7 @@ with Mocha.
 
 * `npm install rewire --save-dev`
 
+Here we're testing the order module which reads "real" data from data/inventory.json file. With Rewire
+we'll be mocking that data. 
 
+We're replacing real data with test data for SUT (system under test.)
