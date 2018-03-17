@@ -51,3 +51,12 @@ Here we're testing the order module which reads "real" data from data/inventory.
 we'll be mocking that data. 
 
 We're replacing real data with test data for SUT (system under test.)
+
+10_05 - Advanced Testing Sinon Spies
+-------------------------------------------
+
+Standalone test spies, stubs and mocks for JavaScript. Works with any unit testing framework.
+
+### Install Sinon module using the following command
+
+* `npm install sinon --save-dev`
