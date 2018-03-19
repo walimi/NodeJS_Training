@@ -40,6 +40,12 @@ describe("Ordering items", function() {
 
     });
 
+    // order an item that doesn't exist
+    it("Logs 'item not found", function() {
+        order.orderItem("ZZZ", 10);
+        expect(this.console.log.calledWith("Item - ZZZ not found")).to.equal(true);
+    });
+
     it("order an item if there are enough in the stock", function(done){
         
         // we need to protect the scope of this object
