@@ -64,3 +64,23 @@ Standalone test spies, stubs and mocks for JavaScript. Works with any unit testi
 
 10_06 - Advanced Testing Sinon Stubs
 ------------------------------------
+
+
+10_07 - Code coverage with Istanbul
+------------------------------------
+
+Istanbul is a node module that we can use to generate code coverage reports. 
+
+### Install Istanbul module with the following command
+
+* `npm install -g Istanbul`
+
+### To make Istanbul work with Mocha run the following from the command line
+
+* `istanbul cover _mocha`
+
+Running the above command will generate a coverage folder. Navigate to the 
+Coverage > lcov-report > index.html to see the coverage details in a HTML page. 
+
+
+
