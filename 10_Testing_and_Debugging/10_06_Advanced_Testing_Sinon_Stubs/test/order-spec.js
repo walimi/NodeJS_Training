@@ -21,6 +21,11 @@ describe("Ordering items", function() {
             log: sinon.spy()
         };
 
+
+        this.warehouse = {
+            packageAndShip: sinon.stub().yields(10987654321)
+        };
+
         // note that "inventoryData" is the name of the variable in order module
         // here, we're reseting it to this.testData    
         order.__set__("inventoryData", this.testData);
@@ -28,6 +33,10 @@ describe("Ordering items", function() {
         // we're "hijacking" the console.log statements so to avoid seeing those
         // in our output. 
         order.__set__("console", this.console);
+
+        // here we're stubbing the packageAndShip method so that 
+        // our tests don't actually call this method.
+        order.__set__("warehouse", this.warehouse);
 
     });
 
@@ -47,4 +56,28 @@ describe("Ordering items", function() {
             done();
         });
     });
+
+    describe("Warehouse interaction", function() {
+
+        beforeEach(function() {
+            this.callback = sinon.spy();
+            order.orderItem("CCC", 2, this.callback);
+        });
+
+        // we want test to see if this.callback from line 63 was called 
+        // with a tracking number of 10987654321
+        it("receives a tracking number", function() {
+            expect(this.callback.calledWith(10987654321)).to.equal(true);
+        });
+
+        // we want to test to see if warehouse.packageAndShip was called with 
+        // item: "CCC" and quantity: 2
+        it("calls packageAndShip with the correct sku and quantity", function() {
+            expect(this.warehouse.packageAndShip.calledWith("CCC", 2)).to.equal(true);
+        });
+
+
+    });
+
+
 });
