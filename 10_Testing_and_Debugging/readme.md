@@ -85,7 +85,14 @@ Coverage > lcov-report > index.html to see the coverage details in a HTML page.
 
 10_08 - Testing HTTP Endpoints with Supertest
 ---------------------------------------------
-(I copied files from start folder and ran npm install. Then executed node app to run the app.) 
+(I copied files from start folder and ran npm install. Then executed node app to run the app.)
+
+You can use Supertest modules to test your HTTP endpoints whether you're returning HTML pages
+or JSON API data.  
+
+### Intall the Supertest module by running the following command
+
+* `npm install supertest --save-dev`
 
 
 
