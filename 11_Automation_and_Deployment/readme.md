@@ -15,3 +15,6 @@
 
 Run grunt in the command line by typing 
 * `grunt`
+
+11_02 - Converting LESS to CSS with Grunt
+-----------------------------------------
