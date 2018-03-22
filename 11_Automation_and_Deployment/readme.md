@@ -12,3 +12,6 @@
 
 ### Install Grunt JS Hint using the following command
 * `npm install grunt-contrib-jshint --save-dev`
+
+Run grunt in the command line by typing 
+* `grunt`
