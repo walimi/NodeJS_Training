@@ -37,3 +37,7 @@ Using the CommonJS pattern to require jQuery.
 ### Intsalll the jQuery module using the following command
 
 * `npm install jquery`
+
+### Install the Browserify module using the following command
+
+* `npm install grunt-browserify --save-dev` 
