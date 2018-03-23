@@ -41,3 +41,19 @@ Using the CommonJS pattern to require jQuery.
 ### Install the Browserify module using the following command
 
 * `npm install grunt-browserify --save-dev` 
+
+11_04 - Rapid Development with Grunt Watches
+---------------------------------------------
+
+### Install the following module
+
+* `npm install grunt-contrib-watch --save-dev`
+
+After installing the above module and configuring the GruntFile.js to watch for files, 
+
+1. Run `grunt` in the command line to make sure the files are generated
+2. Start the application by running `node app`
+3. Open another terminal window (or tab)
+4. Type `grunt watch`
+
+This will watch the files for any changes and run the tasks defined in the grunt watch task. 

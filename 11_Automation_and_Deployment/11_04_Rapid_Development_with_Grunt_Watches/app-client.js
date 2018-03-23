@@ -9,5 +9,4 @@ $(document).ready(function () {
         $.post('/dictionary-api', {term: $('#term').val(), defined: $('#defined').val()}, printTerms);
         document.forms[0].reset();
     });
-
 });
