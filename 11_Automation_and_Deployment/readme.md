@@ -29,3 +29,11 @@ Install the following package to ensure flex (used in CSS) work in as many brows
 * `npm install grunt-autoprefixer --save-dev`
 
 Then you can run grunt in the command line to execute all tasks configured in GruntFile.js file. 
+
+11_03 - Bundling client scripts with Browserify
+------------------------------------------------
+Using the CommonJS pattern to require jQuery. 
+
+### Intsalll the jQuery module using the following command
+
+* `npm install jquery`
