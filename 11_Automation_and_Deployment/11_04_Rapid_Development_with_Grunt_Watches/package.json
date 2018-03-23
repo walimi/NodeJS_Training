@@ -11,7 +11,7 @@
     "terms",
     "dictionary"
   ],
-  "author": "Alex Banks",
+  "author": "Wahid Alimi",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.14.1",
