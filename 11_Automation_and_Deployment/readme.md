@@ -60,4 +60,14 @@ This will watch the files for any changes and run the tasks defined in the grunt
 
 11_05 - Automation with npm
 ---------------------------
+After configuring the scripts node in package.json file you run the following command:
+* `npm start`
 
+You can also create custom commands under script node. In this case we have created the `dev` custom
+script. (Refer to the package.json > script node to see the details.) 
+
+After configuring the custom `dev` script, you can run it using the following command
+* `npm run dev`
+
+Note that for scripts like "start", "test", "publish" or "install" we do not need to use the `run`
+keyword as those are built-in. For any custom scripts like `dev` we'll need to specify `run`.  
