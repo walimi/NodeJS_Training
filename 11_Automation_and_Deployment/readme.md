@@ -71,3 +71,6 @@ After configuring the custom `dev` script, you can run it using the following co
 
 Note that for scripts like "start", "test", "publish" or "install" we do not need to use the `run`
 keyword as those are built-in. For any custom scripts like `dev` we'll need to specify `run`.  
+
+11_06 - Debugging with npm
+----------------------------
