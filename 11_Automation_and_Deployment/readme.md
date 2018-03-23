@@ -57,3 +57,7 @@ After installing the above module and configuring the GruntFile.js to watch for 
 4. Type `grunt watch`
 
 This will watch the files for any changes and run the tasks defined in the grunt watch task. 
+
+11_05 - Automation with npm
+---------------------------
+
